@@ -168,6 +168,7 @@ body {
 @media (max-width: 550px) {
     .faq-card {
         flex-direction: column;
+        max-width: 327px;
     }
     .svg-box, .svg-pattern, .svg-pattern-woman {
         display: none;
@@ -183,6 +184,13 @@ body {
     }
     .faq-card-left {
         overflow: initial
+    }
+    .faq-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .faq-card-right {
+        margin-left: 0;
     }
 }
 
