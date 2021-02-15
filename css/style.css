@@ -96,6 +96,7 @@ body {
 .faq-section-q h3 {
     font-weight: 400;  
     font-size: 14px;
+    margin-bottom: 0;
 }
 
 .faq-section-q:hover {
@@ -109,7 +110,7 @@ body {
 }
 
 .faq-answer {
-    margin-top: 0;
+    /* margin-top: 0; */
     height: 0;
     visibility: hidden;
     opacity: 0;
@@ -128,6 +129,23 @@ body {
     visibility: visible;
     opacity: 1;
     height: 100%;
+}
+
+.svg-pattern-woman-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+.svg-pattern-mobile {
+    display: none;
+    position: absolute;
+    left: 53%;
+    transform: translateX(-50%);
+    
 }
 
 
@@ -149,7 +167,22 @@ body {
 
 @media (max-width: 550px) {
     .faq-card {
-        width: 90%;
+        flex-direction: column;
+    }
+    .svg-box, .svg-pattern, .svg-pattern-woman {
+        display: none;
+    }
+    .faq-section h1 {
+        text-align: center;
+    }
+    .svg-pattern-woman-mobile {
+        display: block;
+    }
+    .svg-pattern-mobile {
+        display: block;
+    }
+    .faq-card-left {
+        overflow: initial
     }
 }
 
